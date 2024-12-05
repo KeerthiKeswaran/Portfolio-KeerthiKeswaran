@@ -6,7 +6,7 @@ const experiences = [
   {
     title: 'AI Research Intern',
     company: 'RevoltronX',
-    date: '2023',
+    date: 'Jan-2024 to Dec-2024',
     responsibilities: [
       'Built LLM-based chat servers and optimized semantic search systems',
       'Implemented advanced memory optimization techniques',
@@ -19,7 +19,7 @@ const experiences = [
   {
     title: 'Software Engineering Virtual Intern',
     company: 'Accenture Nordics',
-    date: '2023',
+    date: 'Jun-2024 to Jul-2024',
     responsibilities: [
       'Participated in agile development practices',
       'Collaborated on full-stack development projects',
