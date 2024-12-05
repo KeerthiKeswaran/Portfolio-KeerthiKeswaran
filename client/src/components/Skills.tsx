@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Code2, Database, Cloud, Users, Cpu, HardDrive } from 'lucide-react';
+import { Code2, Database, Cloud, Users,HardDrive, Wrench, Cpu} from 'lucide-react';
 
 const skills = {
   'Programming Languages': ['Java', 'Python', 'C/C++', 'JavaScript'],
@@ -51,10 +51,10 @@ export default function Skills() {
               >
                 <div className="flex items-center mb-4">
                   {index === 0 && <Code2 className="w-6 h-6 text-cyan-glow mr-2" />}
-                  {index === 1 && <Cpu className="w-6 h-6 text-cyan-glow mr-2" />}
+                  {index === 1 && <Wrench className="w-6 h-6 text-cyan-glow mr-2" />}
                   {index === 2 && <Cloud className="w-6 h-6 text-cyan-glow mr-2" />}
                   {index === 3 && <Database className="w-6 h-6 text-cyan-glow mr-2" />}
-                  {index === 4 && <HardDrive className="w-6 h-6 text-cyan-glow mr-2" />} {/* Replaced CpuChip with HardDrive */}
+                  {index === 4 && <Cpu className="w-6 h-6 text-cyan-glow mr-2" />} {/* Replaced CpuChip with HardDrive */}
                   {index === 5 && <Users className="w-6 h-6 text-cyan-glow mr-2" />}
                   <h3 className="text-xl font-semibold text-ghost-white">{category}</h3>
                 </div>
