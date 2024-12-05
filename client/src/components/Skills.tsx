@@ -5,7 +5,7 @@ import { Code2, Database, Cloud, Users,HardDrive, Wrench, Cpu} from 'lucide-reac
 const skills = {
   'Programming Languages': ['Java', 'Python', 'C/C++', 'JavaScript'],
   'Frameworks/Tools': ['React', 'Node.js', 'Express', 'MongoDB', 'FastAPI','Tailwind'],
-  'Cloud Technologies': ['AWS', 'GCP', 'Docker'],
+  'Cloud & Deployment': ['AWS', 'GCP', 'Docker', 'Git & GitHub'],
   'Database Technologies': ['SQL', 'NoSQL','Neo4j', 'GraphQL'],
   'ML & Gen-AI': ['TensorFlow','LangChain', 'Transformers','Pytorch','Lora-PEFT'],
   'Soft Skills': ['Communication', 'Leadership', 'Teamwork']
