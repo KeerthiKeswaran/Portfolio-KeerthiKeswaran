@@ -1,16 +1,15 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Code2, Database, Cloud, Users } from 'lucide-react';
+import { Code2, Database, Cloud, Users, Cpu, HardDrive } from 'lucide-react';
 
 const skills = {
   'Programming Languages': ['Java', 'Python', 'C/C++', 'JavaScript'],
-  'Frameworks/Tools': ['React', 'Node.js', 'Express', 'MongoDB', 'FastAPI', 'Neo4j', 'GraphQL', 'Tailwind', 'LangChain', 'Transformers'],
+  'Frameworks/Tools': ['React', 'Node.js', 'Express', 'MongoDB', 'FastAPI','Tailwind'],
   'Cloud Technologies': ['AWS', 'GCP', 'Docker'],
-  'Database Technologies': ['SQL', 'NoSQL'],
-  'Machine Learning & AI': ['TensorFlow'],
+  'Database Technologies': ['SQL', 'NoSQL','Neo4j', 'GraphQL'],
+  'ML & Gen-AI': ['TensorFlow','LangChain', 'Transformers','Pytorch','Lora-PEFT'],
   'Soft Skills': ['Communication', 'Leadership', 'Teamwork']
 };
-
 
 export default function Skills() {
   const [ref, inView] = useInView({
@@ -52,9 +51,11 @@ export default function Skills() {
               >
                 <div className="flex items-center mb-4">
                   {index === 0 && <Code2 className="w-6 h-6 text-cyan-glow mr-2" />}
-                  {index === 1 && <Database className="w-6 h-6 text-cyan-glow mr-2" />}
+                  {index === 1 && <Cpu className="w-6 h-6 text-cyan-glow mr-2" />}
                   {index === 2 && <Cloud className="w-6 h-6 text-cyan-glow mr-2" />}
-                  {index === 3 && <Users className="w-6 h-6 text-cyan-glow mr-2" />}
+                  {index === 3 && <Database className="w-6 h-6 text-cyan-glow mr-2" />}
+                  {index === 4 && <HardDrive className="w-6 h-6 text-cyan-glow mr-2" />} {/* Replaced CpuChip with HardDrive */}
+                  {index === 5 && <Users className="w-6 h-6 text-cyan-glow mr-2" />}
                   <h3 className="text-xl font-semibold text-ghost-white">{category}</h3>
                 </div>
                 <ul className="space-y-2">
