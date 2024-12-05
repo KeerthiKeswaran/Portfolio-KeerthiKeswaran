@@ -4,10 +4,13 @@ import { Code2, Database, Cloud, Users } from 'lucide-react';
 
 const skills = {
   'Programming Languages': ['Java', 'Python', 'C/C++', 'JavaScript'],
-  'Frameworks/Tools': ['React', 'Node.js', 'Express', 'MongoDB', 'FastAPI', 'LangChain', 'Transformers'],
-  'Cloud Technologies': ['AWS', 'GCP'],
+  'Frameworks/Tools': ['React', 'Node.js', 'Express', 'MongoDB', 'FastAPI', 'Neo4j', 'GraphQL', 'Tailwind', 'LangChain', 'Transformers'],
+  'Cloud Technologies': ['AWS', 'GCP', 'Docker'],
+  'Database Technologies': ['SQL', 'NoSQL'],
+  'Machine Learning & AI': ['TensorFlow'],
   'Soft Skills': ['Communication', 'Leadership', 'Teamwork']
 };
+
 
 export default function Skills() {
   const [ref, inView] = useInView({
