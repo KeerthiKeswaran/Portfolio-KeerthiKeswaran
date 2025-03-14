@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Code2, Database, Cloud, Users,HardDrive, Wrench, Cpu} from 'lucide-react';
+import { Code2, Database, Cloud, Users, Wrench, Cpu} from 'lucide-react';
 
 const skills = {
   'Programming Languages': ['Java', 'Python', 'C/C++', 'JavaScript'],
