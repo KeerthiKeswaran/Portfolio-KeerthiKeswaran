@@ -1,20 +1,19 @@
 import React from 'react';
-import profile from '../assets/profile.jpg';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute top-0 right-0 mt-20 mr-8">
+    <section id="about" className="min-h-screen flex items-center justify-center relative overflow-hidden scroll-mt-16">
+      {/*<div className="absolute top-0 right-0 mt-20 mr-8">
         <motion.img
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          src={profile}
+          src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=400&h=400&fit=crop"
           alt="Keerthikeswaran K S"
           className="w-32 h-32 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg"
         />
-      </div>
+      </div>*/}
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.h1

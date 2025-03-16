@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Code2, Database, PenTool as Tool, Heart } from 'lucide-react';
+import { Code2, Database, Wrench, Brain, BookOpen } from 'lucide-react';
 
 const skillCategories = [
   {
@@ -17,12 +17,17 @@ const skillCategories = [
   {
     title: "Tools/Technologies",
     skills: ["Git", "Docker", "AWS Lambda", "S3", "PyTorch", "LangChain", "Transformer LLMs", "Selenium", "Apache JMeter"],
-    icon: <Tool className="w-6 h-6" />,
+    icon: <Wrench className="w-6 h-6" />,
+  },
+  {
+    title: "Fundamentals",
+    skills: ["Data Structures and Algorithms", "Operating Systems", "DBMS", "Computer Networks", "IoT", "Cloud Computing", "Machine Learning", "Agile"],
+    icon: <BookOpen className="w-6 h-6" />,
   },
   {
     title: "Soft Skills",
     skills: ["Verbal and Written Communication", "Leadership", "Teamwork", "Public Speaking"],
-    icon: <Heart className="w-6 h-6" />,
+    icon: <Brain className="w-6 h-6" />,
   },
 ];
 
@@ -33,7 +38,7 @@ const Skills = () => {
   });
 
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-900 scroll-mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

@@ -5,6 +5,14 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
+    title: "Proctor-Audit: AI-Powered Real-Time Proctoring Tool",
+    description: "Built an AI-driven proctoring tool with facial tracking, eye movement analysis, and anomaly detection, improving cheating detection by 85%. Integrated WebSockets for real-time monitoring with minimal latency (<200ms), scaling to handle 1000+ concurrent exam sessions.",
+    links: {
+      docs: "https://proctor-audit.vercel.app/"
+    },
+    date: "Mar 2025"
+  },
+  {
     title: "PTBDB Arrhythmia Classification",
     description: "Developed a deep learning model using ResNet-based CNN to classify ECG signals with 98.6% accuracy. Optimized feature extraction and data preprocessing, achieving 97% accuracy on normal cases and 99.3% on abnormal cases.",
     links: {
@@ -143,7 +151,7 @@ const ProjectCard = ({ project, index }) => {
 
 const Projects = () => {
   return (
-    <section className="py-20 bg-gray-50 dark:bg-black">
+    <section id="projects" className="py-20 bg-gray-50 dark:bg-black scroll-mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
