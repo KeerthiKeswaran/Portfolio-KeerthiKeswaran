@@ -35,7 +35,7 @@ const Education = () => {
             Vellore Institute of Technology, Amaravati, AP
           </p>
           <p className="text-xl font-semibold text-black dark:text-white">
-            CGPA: 8.40
+            CGPA: 8.15
           </p>
         </motion.div>
       </div>
